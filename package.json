@@ -1,6 +1,6 @@
 {
   "name": "@installdoc/ansible-snapd",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ensures Snap is installed and properly configured on Linux systems",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
@@ -33,7 +33,7 @@
   "dependencies": {},
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
-    "@megabytelabs/prettier-config": "^2.0.0",
+    "@megabytelabs/prettier-config": "^14.14.14",
     "@prettier/plugin-xml": "^1.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
@@ -43,9 +43,7 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-jsonc": "^1.6.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-yml": "0.10.1",
-    "prettier": "^2.4.0",
-    "prettier-plugin-sh": "^0.7.1"
+    "eslint-plugin-yml": "0.10.1"
   },
   "keywords": [
     "ansible",
@@ -55,35 +53,18 @@
     "doctor",
     "fedora",
     "install",
-    "installation",
     "installdoc",
     "installdoctor",
-    "linux",
     "macos",
     "megabytelabs",
     "molecule",
-    "package",
     "professormanhattan",
     "role",
-    "snap",
-    "snapd",
-    "software",
     "ubuntu",
     "windows"
   ],
   "engines": {
     "node": ">=10"
-  },
-  "blueprint": {
-    "description": "Ensures Snap is installed and properly configured on Linux systems",
-    "overview": "[Snap](https://snapcraft.io/) is a software packaging and deployment system developed by Canonical for operating systems that use the Linux kernel. The packages, called snaps, and the tool for using them, snapd, work across a range of Linux distributions and allow upstream software developers to distribute their applications directly to users. Snaps are self-contained applications running in a sandbox with mediated access to the host system.",
-    "name": "Snap",
-    "repository": {
-      "github": "https://github.com/ProfessorManhattan/ansible-snapd",
-      "gitlab": "https://gitlab.com/megabyte-labs/ansible-roles/snapd"
-    },
-    "slug": "snapd",
-    "title": "Snap"
   },
   "funding": [
     {
@@ -153,5 +134,9 @@
     "scripts": {
       "prerelease": "git add --all"
     }
+  },
+  "blueprint": {
+    "description": "Ensures Snap is installed and properly configured on Linux systems",
+    "slug": "snapd"
   }
 }
