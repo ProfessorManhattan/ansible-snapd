@@ -5,13 +5,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+.git"
+    "url": "git+https://github.com/ProfessorManhattan/ansible-snapd.git"
   },
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
   "bugs": {
     "email": "help@megabyte.space",
-    "url": "/-/issues"
+    "url": "https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/issues"
   },
   "type": "module",
   "engines": {
