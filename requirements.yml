@@ -1,6 +1,5 @@
 ---
-roles:
-  - name: professormanhattan.snapd
+roles: []
 collections:
   - name: community.general
     source: https://galaxy.ansible.com
