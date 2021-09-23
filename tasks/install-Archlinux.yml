@@ -1,7 +1,7 @@
 ---
 - name: Ensure that the dependencies are installed
   community.general.pacman:
-    name: "{{ pkg_dependencies }}"
+    name: '{{ pkg_dependencies }}'
     update_cache: true
     state: present
 
@@ -14,20 +14,20 @@
   block:
     - name: Ensure to create a temporary directory for snapd source files
       file:
-        path: "{{ temp_directory }}"
+        path: '{{ temp_directory }}'
         state: directory
-        mode: "0770"
+        mode: '0770'
     - name: Ensure that snapd repo is cloned # noqa 401
       become: false
       git:
-        repo: "{{ snapd_aur_repo_url }}"
-        dest: "{{ temp_directory }}"
+        repo: '{{ snapd_aur_repo_url }}'
+        dest: '{{ temp_directory }}'
         clone: true
     - name: Ensure snapd is installed
       become: false
       command: makepkg -sic --noconfirm
       args:
-        chdir: "{{ temp_directory }}"
+        chdir: '{{ temp_directory }}'
         creates: /var/lib/snapd/snap
     - name: Enable and start the snapd systemd unit
       systemd:
@@ -55,5 +55,5 @@
   always:
     - name: Ensure to remove the temporary directory created for snapd source files
       file:
-        path: "{{ temp_directory }}"
+        path: '{{ temp_directory }}'
         state: absent

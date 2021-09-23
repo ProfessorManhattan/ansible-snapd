@@ -8,7 +8,7 @@
 
 - name: Ensure snap dependencies are installed
   yum:
-    name: "{{ snap_dependencies }}"
+    name: '{{ snap_dependencies }}'
     state: present
 
 - name: Enable and start the snapd systemd unit

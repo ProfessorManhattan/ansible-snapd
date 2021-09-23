@@ -1,12 +1,12 @@
 <!-- ⚠️ This README has been generated from the file(s) ".common/docs/blueprint-readme-role.md" ⚠️--><div align="center">
   <center>
-    <a href="https://github.com/ProfessorManhattan/ansible-snapd">
-      <img width="140" height="140" alt="Snap logo" src="https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/raw/master/logo.png" />
+    <a href="repository.github">
+      <img width="140" height="140" alt="[[ package.json .blueprint.name - See CONTRIBUTING.md ]] logo" src="repository.gitlab/-/raw/master/logo.png" />
     </a>
   </center>
 </div>
 <div align="center">
-  <center><h1 align="center">Ansible Role: Snap<i></i></h1></center>
+  <center><h1 align="center">Ansible Role: [[ package.json .blueprint.title - See CONTRIBUTING.md ]]<i></i></h1></center>
   <center><h4 style="color: #18c3d1;">An Ansible role brought to you by <a href="https://megabyte.space" target="_blank">Megabyte Labs</a></h4><i></i></center>
 </div>
 
@@ -14,10 +14,10 @@
   <a href="https://megabyte.space" title="Megabyte Labs homepage" target="_blank">
     <img alt="Homepage" src="https://img.shields.io/website?down_color=%23FF4136&down_message=Down&label=Homepage&logo=home-assistant&logoColor=white&up_color=%232ECC40&up_message=Up&url=https%3A%2F%2Fmegabyte.space&style=for-the-badge" />
   </a>
-  <a href="https://galaxy.ansible.com/professormanhattan/snapd" title="Snap role on Ansible Galaxy" target="_blank">
+  <a href="https://galaxy.ansible.com/professormanhattan/snapd" title="[[ package.json .blueprint.name - See CONTRIBUTING.md ]] role on Ansible Galaxy" target="_blank">
     <img alt="Ansible Galaxy" src="https://img.shields.io/badge/Ansible-Galaxy-000000?logo=ansible&logoColor=white&style=for-the-badge" />
   </a>
-  <a href="https://github.com/ProfessorManhattan/ansible-snapd/blob/master/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
+  <a href="repository.github/blob/master/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
     <img alt="Contributing" src="https://img.shields.io/badge/Contributing-Guide-0074D9?logo=github-sponsors&logoColor=white&style=for-the-badge" />
   </a>
   <a href="https://www.patreon.com/ProfessorManhattan" title="Support us on Patreon" target="_blank">
@@ -26,10 +26,10 @@
   <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/" title="Chat with us on Slack" target="_blank">
     <img alt="Slack" src="https://img.shields.io/badge/Slack-Chat-e01e5a?logo=slack&logoColor=white&style=for-the-badge" />
   </a>
-  <a href="https://github.com/ProfessorManhattan/ansible-snapd" title="GitHub mirror" target="_blank">
+  <a href="repository.github" title="GitHub mirror" target="_blank">
     <img alt="GitHub" src="https://img.shields.io/badge/Mirror-GitHub-333333?logo=github&style=for-the-badge" />
   </a>
-  <a href="https://gitlab.com/megabyte-labs/ansible-roles/snapd" title="GitLab repository" target="_blank">
+  <a href="repository.gitlab" title="GitLab repository" target="_blank">
     <img alt="GitLab" src="https://img.shields.io/badge/Repo-GitLab-fc6d26?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHJJREFUCNdNxKENwzAQQNEfWU1ZPUF1cxR5lYxQqQMkLEsUdIxCM7PMkMgLGB6wopxkYvAeI0xdHkqXgCLL0Beiqy2CmUIdeYs+WioqVF9C6/RlZvblRNZD8etRuKe843KKkBPw2azX13r+rdvPctEaFi4NVzAN2FhJMQAAAABJRU5ErkJggg==&style=for-the-badge" />
   </a>
 </div>
@@ -38,32 +38,32 @@
   <a title="Ansible Galaxy role: professormanhattan.snapd" href="https://galaxy.ansible.com/professormanhattan/snapd" target="_blank">
     <img alt="Ansible Galaxy role: professormanhattan.snapd" src="https://img.shields.io/ansible/role/ansible_galaxy_project_id?logo=ansible&style=for-the-badge" />
   </a>
-  <a title="Version: 1.0.0" href="https://github.com/ProfessorManhattan/ansible-snapd" target="_blank">
-    <img alt="Version: 1.0.0" src="https://img.shields.io/badge/version-1.0.0-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&cacheSeconds=2592000&style=for-the-badge" />
+  <a title="Version: 0.0.1" href="repository.github" target="_blank">
+    <img alt="Version: 0.0.1" src="https://img.shields.io/badge/version-0.0.1-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&cacheSeconds=2592000&style=for-the-badge" />
   </a>
-  <a title="Windows 11 build status on GitHub" href="{{ https://github.com/ProfessorManhattan/ansible-snapd/actions/Windows.yml" target="_blank">
-    <img alt="Windows 11 build status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/Windows/master?color=cyan&lbel=Windows%20build&logo=windows&style=for-the-badge">
+  <a title="Windows 11 build status on GitHub" href="{{ repository.github/actions/Windows.yml" target="_blank">
+    <img alt="Windows 11 build status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/Windows/master?color=cyan&label=Windows&logo=windows&style=for-the-badge">
   </a>
-  <a title="macOS build status on GitHub" href="https://github.com/ProfessorManhattan/ansible-snapd/actions/macOS.yml" target="_blank">
-    <img alt="macOS build status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/macOS/master?label=macOS%20build&logo=apple&style=for-the-badge">
+  <a title="macOS build status on GitHub" href="repository.github/actions/macOS.yml" target="_blank">
+    <img alt="macOS build status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/macOS/master?label=macOS&logo=apple&style=for-the-badge">
   </a>
-  <a title="Linux build status on GitLab" href="https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/commits/master" target="_blank">
-    <img alt="Linux build status" src="https://img.shields.io/badge/dynamic/json?color=ffdc00&label=Linux&query=%24%5B0%5D.status&url=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2Fmegabyte-labs%252Fansible-roles%252Fsnapd%2Fpipelines&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAAwPEEuOEIxOzswPj7///91+pI+AAAABXRSTlMANRkNJejDPNcAAAB+SURBVCjPddHBDYAgDIXhGtMRHMG7S3hvTP79VxFIQVq1wOVLm7wU8QIJpSThC2wGwwJoPQFKRdiAAIhGsAykZNSZAOVNMx4BMjwtpySgr6CDJdB/MAdJwAvSiFoE5aABHUb0ch0WHNQq+KPAOgCgrbEnbjAHArjGz3jr3hpumrQpvwi66rkAAAAASUVORK5CYII=&style=for-the-badge">
+  <a title="Linux build status on GitLab" href="repository.gitlab/-/commits/master" target="_blank">
+    <img alt="Linux build status" src="https://img.shields.io/badge/dynamic/json?color=ffdc00&label=Linux&query=%24%5B0%5D.status&url=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2Fnull%2Fpipelines&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAAwPEEuOEIxOzswPj7///91+pI+AAAABXRSTlMANRkNJejDPNcAAAB+SURBVCjPddHBDYAgDIXhGtMRHMG7S3hvTP79VxFIQVq1wOVLm7wU8QIJpSThC2wGwwJoPQFKRdiAAIhGsAykZNSZAOVNMx4BMjwtpySgr6CDJdB/MAdJwAvSiFoE5aABHUb0ch0WHNQq+KPAOgCgrbEnbjAHArjGz3jr3hpumrQpvwi66rkAAAAASUVORK5CYII=&style=for-the-badge">
   </a>
   <a title="Ansible Galaxy quality score (out of 5)" href="https://galaxy.ansible.com/professormanhattan/snapd" target="_blank">
     <img alt="Ansible Galaxy quality score" src="https://img.shields.io/ansible/quality/ansible_galaxy_project_id?logo=ansible&style=for-the-badge" />
   </a>
   <a title="Ansible Galaxy download count" href="https://galaxy.ansible.com/professormanhattan/snapd" target="_blank">
-    <img alt="Ansible Galaxy download count" src="https://img.shields.io/ansible/role/d/53381?logo=ansible&style=for-the-badge">
+    <img alt="Ansible Galaxy download count" src="https://img.shields.io/ansible/role/d/53381?logo=ansible&label=Downloads&style=for-the-badge">
   </a>
   <a title="Documentation" href="https://megabyte.space/docs/ansible" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?logo=readthedocs&style=for-the-badge" />
   </a>
-  <a title="License: MIT" href="https://github.com/ProfessorManhattan/ansible-snapd/blob/master/LICENSE" target="_blank">
+  <a title="License: MIT" href="repository.github/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHpJREFUCNdjYOD/wMDAUP+PgYHxhzwDA/MB5gMM7AwMDxj4GBgKGGQYGCyAEEgbMDDwAAWAwmk8958xpIOI5zKH2RmOyhxmZjguAiKmgIgtQOIYmFgCIp4AlaQ9OczGkJYCJEAGgI0CGwo2HmwR2Eqw5SBnNIAdBHYaAJb6KLM15W/CAAAAAElFTkSuQmCC&style=for-the-badge" />
   </a>
   <a title="Support us on Open Collective" href="https://opencollective.com/megabytelabs" target="_blank">
-    <img alt="Open Collective sponsors" src="https://img.shields.io/opencollective/sponsors/megabytelabs?logo=opencollective&logoColor=white&style=for-the-badge" />
+    <img alt="Open Collective sponsors" src="https://img.shields.io/opencollective/sponsors/megabytelabs?logo=opencollective&label=OpenCollective&logoColor=white&style=for-the-badge" />
   </a>
   <a title="Support us on GitHub" href="https://github.com/ProfessorManhattan" target="_blank">
     <img alt="GitHub sponsors" src="https://img.shields.io/github/sponsors/ProfessorManhattan?label=GitHub%20sponsors&logo=github&style=for-the-badge" />
@@ -100,13 +100,13 @@
 
 ## Overview
 
-This repository is the home of an [Ansible](https://www.ansible.com/) role that ensures Snap is installed and properly configured on Linux systems [Snap](https://snapcraft.io/) is a software packaging and deployment system developed by Canonical for operating systems that use the Linux kernel. The packages, called snaps, and the tool for using them, snapd, work across a range of Linux distributions and allow upstream software developers to distribute their applications directly to users. Snaps are self-contained applications running in a sandbox with mediated access to the host system.
+This repository is the home of an [Ansible](https://www.ansible.com/) role that ensures Snap is installed and properly configured on Linux systems [[This is a new repository without the details filled in yet. Look for the section about blueprint data in the CONTRIBUTING.md to set up the project.]]
 
 <a href="#quick-start" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Quick Start
 
-Looking to install Snap without having to deal with [Ansible](https://www.ansible.com/)? Simply run the following command that correlates to your operating system:
+Looking to install [[package.json .blueprint.name - See CONTRIBUTING.md]] without having to deal with [Ansible](https://www.ansible.com/)? Simply run the following command that correlates to your operating system:
 
 **Linux/macOS:**
 
@@ -186,7 +186,7 @@ You can find an example of a playbook that incorporates this role in our main pl
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ProfessorManhattan/ansible-snapd/issues). If you would like to contribute, please take a look at the [contributing guide](https://github.com/ProfessorManhattan/ansible-snapd/blob/master/CONTRIBUTING.md).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](repository.github/issues). If you would like to contribute, please take a look at the [contributing guide](repository.github/blob/master/CONTRIBUTING.md).
 
 <details>
 <summary><b>Sponsorship</b></summary>
@@ -211,4 +211,4 @@ I create open source projects out of love. Although I have a job, shelter, and a
 
 ## License
 
-Copyright © 2020-2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/blob/master/LICENSE) licensed.
+Copyright © 2020-2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](repository.gitlab/-/blob/master/LICENSE) licensed.

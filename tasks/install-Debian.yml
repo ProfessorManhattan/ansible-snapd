@@ -8,7 +8,7 @@
 
 - name: Ensure snap dependencies are installed
   apt:
-    name: "{{ snap_dependencies }}"
+    name: '{{ snap_dependencies }}'
     state: present
 
 - name: Ensure snap is started and enabled on boot

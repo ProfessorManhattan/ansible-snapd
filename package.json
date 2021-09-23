@@ -3,17 +3,20 @@
   "version": "0.0.1",
   "description": "Ensures Snap is installed and properly configured on Linux systems",
   "license": "MIT",
-  "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
-  "homepage": "https://megabyte.space",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProfessorManhattan/ansible-snapd.git"
+    "url": "git+.git"
   },
+  "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
+  "homepage": "https://megabyte.space",
   "bugs": {
     "email": "help@megabyte.space",
-    "url": "https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/issues"
+    "url": "/-/issues"
   },
   "type": "module",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "clean": "task common:clean",
     "commit": "task common:commit",
@@ -25,11 +28,30 @@
     "reset-force": "task common:reset-force",
     "update": "task common:update"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
+  "keywords": [
+    "ansible",
+    "archlinux",
+    "centos",
+    "debian",
+    "doctor",
+    "fedora",
+    "install",
+    "installation",
+    "installdoc",
+    "installdoctor",
+    "linux",
+    "macos",
+    "megabytelabs",
+    "molecule",
+    "package",
+    "professormanhattan",
+    "role",
+    "snap",
+    "snapd",
+    "software",
+    "ubuntu",
+    "windows"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
@@ -45,26 +67,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-yml": "0.10.1"
   },
-  "keywords": [
-    "ansible",
-    "archlinux",
-    "centos",
-    "debian",
-    "doctor",
-    "fedora",
-    "install",
-    "installdoc",
-    "installdoctor",
-    "macos",
-    "megabytelabs",
-    "molecule",
-    "professormanhattan",
-    "role",
-    "ubuntu",
-    "windows"
-  ],
-  "engines": {
-    "node": ">=10"
+  "blueprint": {
+    "description": "Ensures Snap is installed and properly configured on Linux systems",
+    "slug": "snapd"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "funding": [
     {
@@ -134,9 +144,5 @@
     "scripts": {
       "prerelease": "git add --all"
     }
-  },
-  "blueprint": {
-    "description": "Ensures Snap is installed and properly configured on Linux systems",
-    "slug": "snapd"
   }
 }

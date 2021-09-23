@@ -57,7 +57,7 @@ First of all, thanks for visiting this page 😊 ❤️ ! We are totally ecstati
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/ProfessorManhattan/ansible-snapd/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [help@megabyte.space](mailto:help@megabyte.space).
+This project and everyone participating in it is governed by the [Code of Conduct](repository.github/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [help@megabyte.space](mailto:help@megabyte.space).
 
 <a href="#philosophy" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -172,7 +172,7 @@ Using the information provided above by running `task --list`, we can see that t
 
 ## Pull Requests
 
-All pull requests should be associated with issues. Although not strictly required, the pull requests should be made to [the GitLab repository issues board](https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/issues) instead of the [GitHub mirror repository](https://github.com/ProfessorManhattan/ansible-snapd/issues). This is because we use GitLab as our primary repository and mirror the changes to GitHub for the community.
+All pull requests should be associated with issues. Although not strictly required, the pull requests should be made to [the GitLab repository issues board](repository.gitlab/-/issues) instead of the [GitHub mirror repository](repository.github/issues). This is because we use GitLab as our primary repository and mirror the changes to GitHub for the community.
 
 <a href="#code-format" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -531,7 +531,7 @@ You can test all of the operating systems we support by running the following co
 molecule test
 ```
 
-The command `molecule test` will spin up VirtualBox VMs for all the OSes we support and run the role(s). _Do this before committing code._ If you are committing code for only one OS and can not create the fix or feature for the other operating systems then please, at the very minimum, [file an issue](https://gitlab.com/megabyte-labs/ansible-roles/snapd* **github**: /issues
+The command `molecule test` will spin up VirtualBox VMs for all the OSes we support and run the role(s). _Do this before committing code._ If you are committing code for only one OS and can not create the fix or feature for the other operating systems then please, at the very minimum, [file an issue](repository.gitlab\* **github**: /issues
 
 - **gitlab**: /-/issues) so someone else can pick it up.
 
@@ -603,7 +603,7 @@ You might have noticed that there are no CI tests in the chart above for macOS a
 
 - Linux platforms are tested using Molecule and Docker on GitLab CI in parallel. ([Link to GitLab CI configuration](https://gitlab.com/megabyte-labs/ci/-/blob/master/test/molecule.gitlab-ci.yml))
 - Windows is tested using GitLab CI without Molecule. ([Link to GitLab CI configuration](https://gitlab.com/megabyte-labs/ci/-/blob/master/test/windows-ansible-test.gitlab-ci.yml))
-- macOS is tested using GitHub Actions after the code is automatically synchronized between GitLab and GitHub. ([Link to the macOS GitHub Action configuration](https://github.com/ProfessorManhattan/ansible-snapd/-/blob/master/.github/workflows/macOS.yml))
+- macOS is tested using GitHub Actions after the code is automatically synchronized between GitLab and GitHub. ([Link to the macOS GitHub Action configuration](repository.github/-/blob/master/.github/workflows/macOS.yml))
 
 <a href="#linting" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
