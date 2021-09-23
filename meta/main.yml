@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   role_name: snapd
+  namespace: professormanhattan
   author: professormanhattan
   description: Ensures Snap is installed and properly configured on Linux systems
   company: Megabyte Labs
@@ -19,7 +20,7 @@ galaxy_info:
         - focal
     - name: Debian
       versions:
-        - all
+        - buster
   galaxy_tags:
     - ansible
     - debian
