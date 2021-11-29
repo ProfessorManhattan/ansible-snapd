@@ -18,16 +18,6 @@
     "node": ">=10"
   },
   "scripts": {
-    "clean": "task common:clean",
-    "commit": "task common:commit",
-    "info": "task --list",
-    "preinstall": "npx -y only-allow pnpm",
-    "prepare": "task common:husky",
-    "prepare-release": "task common:prepare-release",
-    "requirements": "task common:requirements",
-    "reset": "task common:reset",
-    "reset-force": "task common:reset-force",
-    "update": "task common:update"
   },
   "keywords": [
     "ansible",
@@ -55,18 +45,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/config-conventional": "^13.1.0",
-    "@megabytelabs/prettier-config": "^14.14.14",
-    "@prettier/plugin-xml": "^1.0.2",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-formatter-pretty": "^4.1.0",
-    "eslint-plugin-editorconfig": "^3.0.2",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-jsonc": "^1.6.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-yml": "0.10.1"
+    "@commitlint/config-conventional": "^13.1.0"
   },
   "blueprint": {
     "description": "Ensures Snap is installed and properly configured on Linux systems",
