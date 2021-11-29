@@ -25,6 +25,8 @@
         dest: '{{ temp_directory }}'
         clone: true
 
+    # @action Ensures Snap is installed
+    # Builds Snap from source on Archlinux
     - name: Ensure snapd is installed
       become: false
       command: makepkg -sic --noconfirm
