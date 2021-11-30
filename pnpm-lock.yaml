@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@commitlint/config-conventional': ^13.1.0
-  '@mblabs/eslint-config': ^1.0.108
+  '@mblabs/eslint-config': ^1.0.110
   '@mblabs/prettier-config': ^14.14.14
   '@mblabs/release-config': ^1.0.0
   '@typescript-eslint/eslint-plugin': ^5.2.0
@@ -26,7 +26,7 @@ optionalDependencies:
 
 devDependencies:
   '@commitlint/config-conventional': 13.2.0
-  '@mblabs/eslint-config': 1.0.108
+  '@mblabs/eslint-config': 1.0.110
   '@mblabs/prettier-config': 14.14.30
   '@mblabs/release-config': 1.1.14
   '@typescript-eslint/eslint-plugin': 5.4.0
@@ -395,8 +395,8 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@mblabs/eslint-config/1.0.108:
-    resolution: {integrity: sha512-IB4Ei4QOOQMsjUOLvyQHk3Iq/9x8FHEfhkQwHAd0x/6+bmtBonNLjnalHUHM5xLLYs4ZCVwx1dhVKMz1HkmoLQ==}
+  /@mblabs/eslint-config/1.0.110:
+    resolution: {integrity: sha512-O/2z5UpiWUqR6tgAwPrHyQahPd8q0QKaBAD0GpxxwFe8NHrt2hwLryqCEnra5FL29JyBgy0TEFZKkL1o28VsRA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.4.0_098db790fe293b2eb3e369319b13bb04
