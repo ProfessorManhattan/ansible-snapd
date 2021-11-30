@@ -23,7 +23,6 @@ galaxy_info:
         - buster
   galaxy_tags:
     - ansible
-    - debian
     - doctor
     - fedora
     - install
@@ -32,6 +31,7 @@ galaxy_info:
     - installdoctor
     - linux
     - macos
+    - mblabs
     - megabytelabs
     - molecule
     - package
@@ -42,4 +42,6 @@ galaxy_info:
     - software
     - ubuntu
     - windows
-dependencies: []
+dependencies:
+  - role: professormanhattan.snapd
+    when: ansible_system == Linux

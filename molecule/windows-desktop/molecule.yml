@@ -9,9 +9,7 @@ driver:
   provider:
     name: virtualbox
 lint: |
-  yamllint .
-  ansible-lint
-  flake8
+  task lint:all
 platforms:
   - box: Megabyte/Windows-Desktop
     cpus: 2
@@ -43,7 +41,7 @@ provisioner:
   options:
     vvv: true
   playbooks:
-    converge: converge.yml
+    converge: ../converge.vagrant.yml
     prepare: prepare.yml
 scenario:
   check_sequence:

@@ -8,5 +8,5 @@ pkg_dependencies:
   - python-docutils
   - squashfuse
 
-temp_directory: /tmp/snapd
 snapd_aur_repo_url: https://aur.archlinux.org/snapd.git
+temp_directory: /tmp/snapd

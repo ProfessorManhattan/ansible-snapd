@@ -1,7 +1,6 @@
 ---
 name: macOS Ansible Role Test
 on:
-  pull_request:
   push:
     branches:
       - master
@@ -20,8 +19,12 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
 
+      - name: Install Ansible.
+        run: |
+          pip3 install ansible
+
       - name: Test the role.
         env:
           ANSIBLE_FORCE_COLOR: '1'
         run: |
-          bash tests/macos/test.sh
+          bash test/darwin/test.sh
