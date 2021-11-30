@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ansible-"
+name = "ansible-snapd"
 version = "0.0.1"
 description = "Ensures Snap is installed and properly configured on Linux systems"
 authors = ["Brian Zalewski <brian@megabyte.space>"]
