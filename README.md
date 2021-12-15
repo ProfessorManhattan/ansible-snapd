@@ -6,8 +6,8 @@
   </center>
 </div>
 <div align="center">
-  <center><h1 align="center">Ansible Role: Snap - A Linux Package Manager<i></i></h1></center>
-  <center><h4 style="color: #18c3d1;">An Ansible role brought to you by <a href="https://megabyte.space" target="_blank">Megabyte Labs</a></h4><i></i></center>
+  <center><h1 align="center"><i></i>Snap - A Linux Package Manager<i></i></h1></center>
+  <center><h4 style="color: #18c3d1;">Crafted by <a href="https://megabyte.space" target="_blank">Megabyte Labs</a></h4><i></i></center>
 </div>
 
 <div align="center">
@@ -16,9 +16,6 @@
   </a>
   <a href="https://github.com/ProfessorManhattan/ansible-snapd/blob/master/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
     <img alt="Contributing" src="https://img.shields.io/badge/Contributing-Guide-0074D9?logo=github-sponsors&logoColor=white&style=for-the-badge" />
-  </a>
-  <a href="https://www.patreon.com/ProfessorManhattan" title="Support us on Patreon" target="_blank">
-    <img alt="Patreon" src="https://img.shields.io/badge/Patreon-Support-052d49?logo=patreon&logoColor=white&style=for-the-badge" />
   </a>
   <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/" title="Chat with us on Slack" target="_blank">
     <img alt="Slack" src="https://img.shields.io/badge/Slack-Chat-e01e5a?logo=slack&logoColor=white&style=for-the-badge" />
@@ -44,11 +41,11 @@
   <a title="Windows 11 test status on GitHub" href="https://github.com/ProfessorManhattan/ansible-snapd/actions/workflows/Windows.yml" target="_blank">
     <img alt="Windows 11 test status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/Windows%20Ansible%20Role%20Test/master?color=cyan&label=windows&logo=windows&style=flat-square">
   </a>
-  <a title="macOS test status on GitHub" href="https://github.com/ProfessorManhattan/ansible-snapd/actions/workflows/macOS.yml" target="_blank">
-    <img alt="macOS test status" src="https://img.shields.io/github/workflow/status/ProfessorManhattan/ansible-snapd/macOS%20Ansible%20Role%20Test/master?label=mac&logo=apple&style=flat-square">
+  <a title="macOS test status on GitLab" href="https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/commits/master" target="_blank">
+    <img alt="macOS test status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/ansible-roles/snapd?branch=test%2Fdarwin&label=osx&logo=apple&style=flat-square">
   </a>
   <a title="Linux Molecule test status on GitLab" href="https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/commits/master" target="_blank">
-    <img alt="Linux Molecule test status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/ansible-roles/snapd?branch=linux&label=linux&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAAwPEEuOEIxOzswPj7///91+pI+AAAABXRSTlMANRkNJejDPNcAAAB+SURBVCjPddHBDYAgDIXhGtMRHMG7S3hvTP79VxFIQVq1wOVLm7wU8QIJpSThC2wGwwJoPQFKRdiAAIhGsAykZNSZAOVNMx4BMjwtpySgr6CDJdB/MAdJwAvSiFoE5aABHUb0ch0WHNQq+KPAOgCgrbEnbjAHArjGz3jr3hpumrQpvwi66rkAAAAASUVORK5CYII=&style=flat-square">
+    <img alt="Linux Molecule test status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/ansible-roles/snapd?branch=test%2Flinux&label=linux&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAAwPEEuOEIxOzswPj7///91+pI+AAAABXRSTlMANRkNJejDPNcAAAB+SURBVCjPddHBDYAgDIXhGtMRHMG7S3hvTP79VxFIQVq1wOVLm7wU8QIJpSThC2wGwwJoPQFKRdiAAIhGsAykZNSZAOVNMx4BMjwtpySgr6CDJdB/MAdJwAvSiFoE5aABHUb0ch0WHNQq+KPAOgCgrbEnbjAHArjGz3jr3hpumrQpvwi66rkAAAAASUVORK5CYII=&style=flat-square">
   </a>
   <a title="Ansible Galaxy quality score (out of 5)" href="https://galaxy.ansible.com/professormanhattan/snapd" target="_blank">
     <img alt="Ansible Galaxy quality score" src="https://img.shields.io/ansible/quality/56331?logo=ansible&style=flat-square" />
@@ -78,6 +75,7 @@
 - [Quick Start](#quick-start)
 - [Supported Operating Systems](#supported-operating-systems)
 - [Dependencies](#dependencies)
+  - [Python](#python)
   - [Galaxy Roles](#galaxy-roles)
   - [Galaxy Collection](#galaxy-collection)
 - [Example Playbook](#example-playbook)
@@ -146,7 +144,30 @@ if type poetry &> /dev/null; then poetry install --no-root; else pip3 install -r
 ansible-galaxy install -r requirements.yml
 ```
 
-Alternatively, you can simply run `bash .config/scripts/start.sh` if you are new to Ansible and do not mind the development requirements also being installed.
+Alternatively, you can simply run `bash .config/scripts/start.sh` if you are new to Ansible and do not mind the development requirements also being installed. This is the easy way of making sure that everything works properly.
+
+### Python
+
+Although the only tool necessary to run this play on a standard machine is Ansible (a Python package), we include several other Python dependencies that are required for specialized use cases and development. The table below details these packages:
+
+| Package                                                                                                                                        | Description                                                                                                                                                                   | Required                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| <b><a href="https://pypi.org/project/ansible/" title="ansible on pypi.org" target="_blank">ansible</a></b>                                     | A configuration management system that can remotely configure computers                                                                                                       | <div align="center">✔️</div> |
+| <b><a href="https://pypi.org/project/docker/" title="docker on pypi.org" target="_blank">docker</a></b>                                        | Enables the capability of provisioning Docker containers with Ansible                                                                                                         | <div align="center">✔️</div> |
+| <b><a href="https://pypi.org/project/python-vagrant/" title="python-vagrant on pypi.org" target="_blank">python-vagrant</a></b>                | Required for provisioning Vagrant VMs                                                                                                                                         | <div align="center">✔️</div> |
+| <b><a href="https://pypi.org/project/pywinrm/" title="pywinrm on pypi.org" target="_blank">pywinrm</a></b>                                     | Required for provisioning Windows machines that are using WinRM                                                                                                               | <div align="center">✔️</div> |
+| <b><a href="https://pypi.org/project/ansible-lint/" title="ansible-lint on pypi.org" target="_blank">ansible-lint</a></b>                      | Linting tool for Ansible files                                                                                                                                                |                              |
+| <b><a href="https://pypi.org/project/ansibler/" title="ansibler on pypi.org" target="_blank">ansibler</a></b>                                  | Custom tool used to generate advanced documentation (e.g. it generates the compatibility chart and some other charts)                                                         |                              |
+| <b><a href="https://pypi.org/project/black/" title="black on pypi.org" target="_blank">black</a></b>                                           | Python file auto-formatter included in case project utilizes Python test scripts                                                                                              |                              |
+| <b><a href="https://pypi.org/project/blocklint/" title="blocklint on pypi.org" target="_blank">blocklint</a></b>                               | Linting tool that prevents certain words from entering the code base                                                                                                          |                              |
+| <b><a href="https://pypi.org/project/flake8/" title="flake8 on pypi.org" target="_blank">flake8</a></b>                                        | Python linter that reports Python syntax and style errors                                                                                                                     |                              |
+| <b><a href="https://pypi.org/project/mod-ansible-autodoc/" title="mod-ansible-autodoc on pypi.org" target="_blank">mod-ansible-autodoc</a></b> | Custom fork of [ansible-autodoc](https://pypi.org/project/ansible-autodoc/0.5.1.1/) which allows us to auto-generate documentation based on comments in the role's YAML files |                              |
+| <b><a href="https://pypi.org/project/molecule/" title="molecule on pypi.org" target="_blank">molecule</a></b>                                  | Test framework for Ansible                                                                                                                                                    |                              |
+| <b><a href="https://pypi.org/project/molecule-docker/" title="molecule-docker on pypi.org" target="_blank">molecule-docker</a></b>             | Molecule plugin for provisioning Docker containers                                                                                                                            |                              |
+| <b><a href="https://pypi.org/project/molecule-vagrant/" title="molecule-vagrant on pypi.org" target="_blank">molecule-vagrant</a></b>          | Molecule plugin for provisioning Vagrant VMs                                                                                                                                  |                              |
+| <b><a href="https://pypi.org/project/pre-commit-hooks/" title="pre-commit-hooks on pypi.org" target="_blank">pre-commit-hooks</a></b>          | Suite of tools useful for linting                                                                                                                                             |                              |
+| <b><a href="https://pypi.org/project/proselint/" title="proselint on pypi.org" target="_blank">proselint</a></b>                               | Linter used to generate English-language improvements (used to improve documentation)                                                                                         |                              |
+| <b><a href="https://pypi.org/project/yamllint/" title="yamllint on pypi.org" target="_blank">yamllint</a></b>                                  | Linter for YAML files that ensures proper syntax and styling is used                                                                                                          |                              |
 
 ### Galaxy Roles
 
