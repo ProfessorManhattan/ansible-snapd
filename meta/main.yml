@@ -42,6 +42,4 @@ galaxy_info:
     - software
     - ubuntu
     - windows
-dependencies:
-  - role: professormanhattan.snapd
-    when: ansible_system == Linux
+dependencies: []
