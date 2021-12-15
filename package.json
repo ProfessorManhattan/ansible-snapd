@@ -71,6 +71,9 @@
   "blueprint": {
     "ansible_galaxy_project_id": "56331",
     "description": "Ensures Snap is installed and properly configured on Linux systems",
+    "github_id": "R_kgDOGGIrCQ",
+    "gitlab_group_id": "12261670",
+    "gitlab_project_id": "24465088",
     "group": "ansible",
     "name": "Snap",
     "overview": "[Snap](https://snapcraft.io/) is a software packaging and deployment system developed by Canonical for operating systems that use the Linux kernel. The packages, called snaps, and the tool for using them, snapd, work across a range of Linux distributions and allow upstream software developers to distribute their applications directly to users. Snaps are self-contained applications running in a sandbox with mediated access to the host system.",
@@ -80,10 +83,7 @@
     },
     "slug": "snapd",
     "subgroup": "role",
-    "title": "Snap - A Linux Package Manager",
-    "github_id": "R_kgDOGGIrCQ",
-    "gitlab_project_id": "24465088",
-    "gitlab_group_id": "12261670"
+    "title": "Snap - A Linux Package Manager"
   },
   "commitlint": {
     "extends": [
