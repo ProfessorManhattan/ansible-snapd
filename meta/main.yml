@@ -6,7 +6,7 @@ galaxy_info:
   description: Ensures Snap is installed and properly configured on Linux systems
   company: Megabyte Labs
   license: license (MIT)
-  min_ansible_version: 2.1
+  min_ansible_version: 2.10
   platforms:
     - name: EL
       versions:
