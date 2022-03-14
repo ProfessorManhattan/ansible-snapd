@@ -5,8 +5,9 @@ galaxy_info:
   author: professormanhattan
   description: Ensures Snap is installed and properly configured on Linux systems
   company: Megabyte Labs
+  issue_tracker_url: https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/issues
   license: license (MIT)
-  min_ansible_version: 2.10
+  min_ansible_version: 2.1
   platforms:
     - name: EL
       versions:
