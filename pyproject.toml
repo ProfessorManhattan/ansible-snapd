@@ -106,7 +106,7 @@ semantic = [
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://gitlab.com/megabyte-labs/ansible-roles/snapd/-/issues"
-"GitHub" = "https://github.com/ProfessorManhattan/ansible-snapd"
+"GitHub" = "https://github.com/megabyte-labs/ansible-snapd"
 "GitLab" = "https://gitlab.com/megabyte-labs/ansible-roles/snapd"
 "Open Collective" = "https://opencollective.com/megabytelabs"
 "Patreon" = "https://www.patreon.com/ProfessorManhattan"
