@@ -64,7 +64,7 @@
   </a>
 </div>
 
-> </br><h4 align="center">**An Ansible role that ensures Snap is installed and properly configured on Linux systems**</h4></br>
+> <br/><h4 align="center">**An Ansible role that ensures Snap is installed and properly configured on Linux systems**</h4><br/>
 
 <!--TERMINALIZE![terminalizer_title](https://gitlab.com/megabyte-labs/ansible-roles/snapd* **github**: /raw/master/docs/demo.gif
 * **gitlab**: /-/raw/master/docs/demo.gif)TERMINALIZE-->
